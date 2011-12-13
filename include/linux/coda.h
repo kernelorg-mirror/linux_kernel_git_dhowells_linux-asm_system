@@ -111,6 +111,7 @@ typedef unsigned long long u_quad_t;
 #else
 #define cdev_t dev_t
 #endif
+// DISINTEGRATE: INCLUDE UAPI HERE
 
 #ifdef __CYGWIN32__
 struct timespec {
