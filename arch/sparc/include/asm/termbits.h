@@ -29,7 +29,7 @@ struct termios {
 	tcflag_t c_cflag;		/* control mode flags */
 	tcflag_t c_lflag;		/* local mode flags */
 	cc_t c_line;			/* line discipline */
-#ifndef __KERNEL__
+#ifndef __KERNEL__ // DISINTEGRATE: RETAIN
 	cc_t c_cc[NCCS];		/* control characters */
 #else
 	cc_t c_cc[NCCS+2];	/* kernel needs 2 more to hold vmin/vtime */
