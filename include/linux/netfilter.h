@@ -15,6 +15,8 @@
 #include <linux/compiler.h>
 #include <linux/sysctl.h>
 
+// DISINTEGRATE: INCLUDE UAPI HERE
+
 /* Responses from hook functions. */
 #define NF_DROP 0
 #define NF_ACCEPT 1
