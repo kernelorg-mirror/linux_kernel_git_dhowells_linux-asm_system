@@ -1,33 +1,16 @@
 /*
   File: linux/reiserfs_xattr.h
 */
-
 #ifndef _LINUX_REISERFS_XATTR_H
 #define _LINUX_REISERFS_XATTR_H
 
-#include <linux/types.h>
-
-/* Magic value in header */
-#define REISERFS_XATTR_MAGIC 0x52465841	/* "RFXA" */
-
-struct reiserfs_xattr_header {
-	__le32 h_magic;		/* magic number for identification */
-	__le32 h_hash;		/* hash of the value */
-};
-
-struct reiserfs_security_handle {
-	char *name;
-	void *value;
-	size_t length;
-};
-
-#ifdef __KERNEL__
 
 #include <linux/init.h>
 #include <linux/list.h>
 #include <linux/rwsem.h>
 #include <linux/reiserfs_fs_i.h>
 #include <linux/reiserfs_fs.h>
+#include <uapi/linux/reiserfs_xattr.h>
 
 struct inode;
 struct dentry;
@@ -146,7 +129,5 @@ reiserfs_security_write(struct reiserfs_transaction_handle *th,
 static inline void reiserfs_security_free(struct reiserfs_security_handle *sec)
 {}
 #endif
-
-#endif  /*  __KERNEL__  */
 
 #endif  /*  _LINUX_REISERFS_XATTR_H  */

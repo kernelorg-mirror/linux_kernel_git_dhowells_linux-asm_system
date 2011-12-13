@@ -1,20 +1,9 @@
 /*
  * Copyright 1996, 1997, 1998 Hans Reiser, see reiserfs/README for licensing and copyright details
  */
-
-				/* this file has an amazingly stupid
-				   name, yura please fix it to be
-				   reiserfs.h, and merge all the rest
-				   of our .h files that are in this
-				   directory into it.  */
-
 #ifndef _LINUX_REISER_FS_H
 #define _LINUX_REISER_FS_H
 
-#include <linux/types.h>
-#include <linux/magic.h>
-
-#ifdef __KERNEL__
 #include <linux/slab.h>
 #include <linux/interrupt.h>
 #include <linux/sched.h>
@@ -25,25 +14,8 @@
 #include <linux/buffer_head.h>
 #include <linux/reiserfs_fs_i.h>
 #include <linux/reiserfs_fs_sb.h>
-#endif
+#include <uapi/linux/reiserfs_fs.h>
 
-/*
- *  include/linux/reiser_fs.h
- *
- *  Reiser File System constants and structures
- *
- */
-
-/* ioctl's command */
-#define REISERFS_IOC_UNPACK		_IOW(0xCD,1,long)
-/* define following flags to be the same as in ext2, so that chattr(1),
-   lsattr(1) will work with us. */
-#define REISERFS_IOC_GETFLAGS		FS_IOC_GETFLAGS
-#define REISERFS_IOC_SETFLAGS		FS_IOC_SETFLAGS
-#define REISERFS_IOC_GETVERSION		FS_IOC_GETVERSION
-#define REISERFS_IOC_SETVERSION		FS_IOC_SETVERSION
-
-#ifdef __KERNEL__
 /* the 32 bit compat definitions with int argument */
 #define REISERFS_IOC32_UNPACK		_IOW(0xCD, 1, int)
 #define REISERFS_IOC32_GETFLAGS		FS_IOC32_GETFLAGS
@@ -2353,7 +2325,5 @@ long reiserfs_ioctl(struct file *filp, unsigned int cmd, unsigned long arg);
 long reiserfs_compat_ioctl(struct file *filp,
 		   unsigned int cmd, unsigned long arg);
 int reiserfs_unpack(struct inode *inode, struct file *filp);
-
-#endif /* __KERNEL__ */
 
 #endif				/* _LINUX_REISER_FS_H */
