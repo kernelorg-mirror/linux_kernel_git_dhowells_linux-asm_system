@@ -40,6 +40,7 @@
 #endif
 #endif
 
+// DISINTEGRATE: INCLUDE UAPI HERE
 #endif /* __KERNEL__ **/
 
 /*
