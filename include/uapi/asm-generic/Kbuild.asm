@@ -1,12 +1,12 @@
 #
-# Headers that are optional in arch/*/include/asm/
+# Headers that are optional in arch/*/uapi/asm/
 #
 opt-header += kvm.h
 opt-header += kvm_para.h
 opt-header += a.out.h
 
 #
-# Headers that are mandatory in arch/*/include/asm/
+# Headers that are mandatory in arch/*/uapi/asm/
 #
 asm-headers += auxvec.h
 asm-headers += bitsperlong.h
@@ -40,5 +40,5 @@ asm-headers += types.h
 asm-headers += unistd.h
 
 header-y := $(foreach hdr,$(asm-headers) $(opt-headers), \
-		$(if $(wildcard $(srctree)/arch/$(SRCARCH)/include/asm/$(hdr)), \
+		$(if $(wildcard $(srctree)/arch/$(SRCARCH)/include/uapi/$(hdr)), \
 		  $(hdr)))
