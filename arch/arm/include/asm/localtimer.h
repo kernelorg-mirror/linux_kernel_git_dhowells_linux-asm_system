@@ -24,7 +24,7 @@ void percpu_timer_setup(void);
 
 #ifdef CONFIG_HAVE_ARM_TWD
 
-#include "smp_twd.h"
+#include <asm/smp_twd.h>
 
 #define local_timer_stop(c)	twd_timer_stop((c))
 

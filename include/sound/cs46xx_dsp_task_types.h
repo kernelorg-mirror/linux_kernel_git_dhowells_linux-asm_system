@@ -27,7 +27,7 @@
 #ifndef __CS46XX_DSP_TASK_TYPES_H__
 #define __CS46XX_DSP_TASK_TYPES_H__
 
-#include "cs46xx_dsp_scb_types.h"
+#include <sound/cs46xx_dsp_scb_types.h>
 
 /*********************************************************************************************
 Example hierarchy of stream control blocks in the SP

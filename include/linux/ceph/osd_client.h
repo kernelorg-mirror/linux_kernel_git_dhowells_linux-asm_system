@@ -6,9 +6,9 @@
 #include <linux/mempool.h>
 #include <linux/rbtree.h>
 
-#include "types.h"
-#include "osdmap.h"
-#include "messenger.h"
+#include <linux/ceph/types.h>
+#include <linux/ceph/osdmap.h>
+#include <linux/ceph/messenger.h>
 
 /* 
  * Maximum object name size 

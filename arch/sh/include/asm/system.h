@@ -176,9 +176,9 @@ struct mem_access {
 };
 
 #ifdef CONFIG_SUPERH32
-# include "system_32.h"
+# include <asm/system_32.h>
 #else
-# include "system_64.h"
+# include <asm/system_64.h>
 #endif
 
 #endif

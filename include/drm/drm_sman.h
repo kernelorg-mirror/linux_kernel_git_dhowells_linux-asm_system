@@ -39,8 +39,8 @@
 #ifndef DRM_SMAN_H
 #define DRM_SMAN_H
 
-#include "drmP.h"
-#include "drm_hashtab.h"
+#include <drm/drmP.h>
+#include <drm/drm_hashtab.h>
 
 /*
  * A class that is an abstration of a simple memory allocator.

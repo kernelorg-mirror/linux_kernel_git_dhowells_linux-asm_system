@@ -22,8 +22,8 @@
 #ifndef __CS46XX_DSP_SPOS_H__
 #define __CS46XX_DSP_SPOS_H__
 
-#include "cs46xx_dsp_scb_types.h"
-#include "cs46xx_dsp_task_types.h"
+#include <sound/cs46xx_dsp_scb_types.h>
+#include <sound/cs46xx_dsp_task_types.h>
 
 #define SYMBOL_CONSTANT  0x0
 #define SYMBOL_SAMPLE    0x1

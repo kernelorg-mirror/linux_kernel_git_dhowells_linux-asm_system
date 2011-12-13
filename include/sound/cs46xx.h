@@ -23,11 +23,11 @@
  *
  */
 
-#include "pcm.h"
-#include "pcm-indirect.h"
-#include "rawmidi.h"
-#include "ac97_codec.h"
-#include "cs46xx_dsp_spos.h"
+#include <sound/pcm.h>
+#include <sound/pcm-indirect.h>
+#include <sound/rawmidi.h>
+#include <sound/ac97_codec.h>
+#include <sound/cs46xx_dsp_spos.h>
 
 /*
  *  Direct registers

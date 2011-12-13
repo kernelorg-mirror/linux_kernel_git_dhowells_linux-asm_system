@@ -4,7 +4,7 @@
 #include <asm/unaligned.h>
 #include <linux/time.h>
 
-#include "types.h"
+#include <linux/ceph/types.h>
 
 /*
  * in all cases,
