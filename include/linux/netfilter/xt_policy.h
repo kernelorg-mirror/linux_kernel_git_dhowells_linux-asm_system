@@ -35,7 +35,7 @@ union xt_policy_addr {
 
 struct xt_policy_elem {
 	union {
-#ifdef __KERNEL__
+#ifdef __KERNEL__ // DISINTEGRATE: RETAIN
 		struct {
 			union nf_inet_addr saddr;
 			union nf_inet_addr smask;
