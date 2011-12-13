@@ -21,6 +21,7 @@ struct chp_id {
 } __attribute__((packed));
 
 #ifdef __KERNEL__
+// DISINTEGRATE: INCLUDE UAPI HERE
 #include <asm/cio.h>
 
 static inline void chp_id_init(struct chp_id *chpid)
