@@ -19,6 +19,8 @@
 #include <linux/types.h>
 #endif
 
+// DISINTEGRATE: INCLUDE UAPI HERE
+
 /*
  * The event structure itself
  */
