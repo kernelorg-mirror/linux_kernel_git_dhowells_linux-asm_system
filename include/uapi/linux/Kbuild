@@ -1,0 +1,15 @@
+# UAPI Header export list
+header-y += byteorder/
+header-y += can/
+header-y += caif/
+header-y += dvb/
+header-y += hdlc/
+header-y += isdn/
+header-y += mmc/
+header-y += nfsd/
+header-y += raid/
+header-y += spi/
+header-y += sunrpc/
+header-y += netfilter/
+header-y += usb/
+header-y += wimax/
