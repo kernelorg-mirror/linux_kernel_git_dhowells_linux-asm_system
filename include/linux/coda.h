@@ -618,7 +618,7 @@ struct coda_open_by_fd_out {
     struct coda_out_hdr oh;
     int fd;
 
-#ifdef __KERNEL__
+#ifdef __KERNEL__ // DISINTEGRATE: RETAIN
     struct file *fh; /* not passed from userspace but used in-kernel only */
 #endif
 };
