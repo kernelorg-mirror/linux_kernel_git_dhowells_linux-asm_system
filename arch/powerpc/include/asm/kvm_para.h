@@ -16,40 +16,11 @@
  *
  * Authors: Hollis Blanchard <hollisb@us.ibm.com>
  */
-
 #ifndef __POWERPC_KVM_PARA_H__
 #define __POWERPC_KVM_PARA_H__
 
-#include <linux/types.h>
+#include <uapi/asm/kvm_para.h>
 
-struct kvm_vcpu_arch_shared {
-	__u64 scratch1;
-	__u64 scratch2;
-	__u64 scratch3;
-	__u64 critical;		/* Guest may not get interrupts if == r1 */
-	__u64 sprg0;
-	__u64 sprg1;
-	__u64 sprg2;
-	__u64 sprg3;
-	__u64 srr0;
-	__u64 srr1;
-	__u64 dar;
-	__u64 msr;
-	__u32 dsisr;
-	__u32 int_pending;	/* Tells the guest if we have an interrupt */
-	__u32 sr[16];
-};
-
-#define KVM_SC_MAGIC_R0		0x4b564d21 /* "KVM!" */
-#define HC_VENDOR_KVM		(42 << 16)
-#define HC_EV_SUCCESS		0
-#define HC_EV_UNIMPLEMENTED	12
-
-#define KVM_FEATURE_MAGIC_PAGE	1
-
-#define KVM_MAGIC_FEAT_SR	(1 << 0)
-
-#ifdef __KERNEL__
 
 #ifdef CONFIG_KVM_GUEST
 
@@ -168,7 +139,5 @@ static inline unsigned int kvm_arch_para_features(void)
 
 	return r;
 }
-
-#endif /* __KERNEL__ */
 
 #endif /* __POWERPC_KVM_PARA_H__ */
