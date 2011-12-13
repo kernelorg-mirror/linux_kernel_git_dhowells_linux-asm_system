@@ -4,15 +4,11 @@
  *  S390 version
  *    Copyright IBM Corp. 1999,2010
  */
-
 #ifndef _ASM_S390_SETUP_H
 #define _ASM_S390_SETUP_H
 
-#define COMMAND_LINE_SIZE	4096
+#include <uapi/asm/setup.h>
 
-#define ARCH_COMMAND_LINE_SIZE	896
-
-#ifdef __KERNEL__
 
 #define PARMAREA		0x10400
 #define MEMORY_CHUNKS		256
@@ -158,5 +154,4 @@ extern char kernel_nss_name[];
 #define COMMAND_LINE      0x10480
 
 #endif /* __ASSEMBLY__ */
-#endif /* __KERNEL__ */
 #endif /* _ASM_S390_SETUP_H */

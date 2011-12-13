@@ -9,11 +9,11 @@
  *
  *    Author(s): Christian Borntraeger <borntraeger@de.ibm.com>
  */
-
 #ifndef __S390_KVM_PARA_H
 #define __S390_KVM_PARA_H
 
-#ifdef __KERNEL__
+#include <uapi/asm/kvm_para.h>
+
 
 /*
  * Hypercalls for KVM on s390. The calling convention is similar to the
@@ -148,7 +148,5 @@ static inline unsigned int kvm_arch_para_features(void)
 {
 	return 0;
 }
-
-#endif
 
 #endif /* __S390_KVM_PARA_H */
