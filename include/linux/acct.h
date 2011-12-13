@@ -81,7 +81,7 @@ struct acct_v3
 	__u32		ac_pid;			/* Process ID */
 	__u32		ac_ppid;		/* Parent Process ID */
 	__u32		ac_btime;		/* Process Creation Time */
-#ifdef __KERNEL__
+#ifdef __KERNEL__ // DISINTEGRATE: RETAIN
 	__u32		ac_etime;		/* Elapsed Time */
 #else
 	float		ac_etime;		/* Elapsed Time */
