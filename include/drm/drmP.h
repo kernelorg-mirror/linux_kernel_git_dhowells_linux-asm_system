@@ -72,7 +72,11 @@
 #include <linux/workqueue.h>
 #include <linux/poll.h>
 #include <asm/pgalloc.h>
+#ifdef __KERNEL__
 #include <drm/drm.h>
+#else
+#include "drm.h"
+#endif
 
 #include <linux/idr.h>
 
@@ -84,9 +88,15 @@ struct module;
 struct drm_file;
 struct drm_device;
 
+#ifdef __KERNEL__
 #include <drm/drm_os_linux.h>
 #include <drm/drm_hashtab.h>
 #include <drm/drm_mm.h>
+#else
+#include "drm_os_linux.h"
+#include "drm_hashtab.h"
+#include "drm_mm.h"
+#endif
 
 #define DRM_UT_CORE 		0x01
 #define DRM_UT_DRIVER		0x02
