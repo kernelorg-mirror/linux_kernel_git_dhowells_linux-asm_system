@@ -40,6 +40,8 @@ typedef unsigned long sigset_t;
 #endif /* __KERNEL__ */
 #endif /* __ASSEMBLY__ */
 
+// DISINTEGRATE: INCLUDE UAPI HERE
+
 #define SIGHUP		 1
 #define SIGINT		 2
 #define SIGQUIT		 3
