@@ -7,15 +7,12 @@
  * License. See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-
 #ifndef _ASM_MICROBLAZE_SETUP_H
 #define _ASM_MICROBLAZE_SETUP_H
 
-#define COMMAND_LINE_SIZE	256
+#include <uapi/asm/setup.h>
 
 # ifndef __ASSEMBLY__
-
-#  ifdef __KERNEL__
 extern unsigned int boot_cpuid; /* move to smp.h */
 
 extern char cmd_line[COMMAND_LINE_SIZE];
@@ -52,6 +49,5 @@ void machine_shutdown(void);
 void machine_halt(void);
 void machine_power_off(void);
 
-#  endif/* __KERNEL__ */
 # endif /* __ASSEMBLY__ */
 #endif /* _ASM_MICROBLAZE_SETUP_H */
