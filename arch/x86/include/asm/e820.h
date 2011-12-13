@@ -45,6 +45,8 @@
 #define E820_NVS	4
 #define E820_UNUSABLE	5
 
+// DISINTEGRATE: INCLUDE UAPI HERE
+
 /*
  * reserved RAM used by kernel itself
  * if CONFIG_INTEL_TXT is enabled, memory of this type will be
