@@ -13,3 +13,6 @@ header-y += sunrpc/
 header-y += netfilter/
 header-y += usb/
 header-y += wimax/
+
+objhdr-y += version.h
+
