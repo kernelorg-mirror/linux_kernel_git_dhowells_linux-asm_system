@@ -25,10 +25,10 @@
  *          Alex Deucher
  *          Jerome Glisse
  */
-#include "drmP.h"
-#include "drm_sarea.h"
+#include <drm/drmP.h>
+#include <drm/drm_sarea.h>
 #include "radeon.h"
-#include "radeon_drm.h"
+#include <drm/radeon_drm.h>
 
 #include <linux/vga_switcheroo.h>
 #include <linux/slab.h>

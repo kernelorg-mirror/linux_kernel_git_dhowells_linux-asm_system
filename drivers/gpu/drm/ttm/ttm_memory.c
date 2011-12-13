@@ -25,9 +25,9 @@
  *
  **************************************************************************/
 
-#include "ttm/ttm_memory.h"
-#include "ttm/ttm_module.h"
-#include "ttm/ttm_page_alloc.h"
+#include <drm/ttm/ttm_memory.h>
+#include <drm/ttm/ttm_module.h>
+#include <drm/ttm/ttm_page_alloc.h>
 #include <linux/spinlock.h>
 #include <linux/sched.h>
 #include <linux/wait.h>

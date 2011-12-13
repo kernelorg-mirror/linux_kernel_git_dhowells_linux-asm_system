@@ -37,7 +37,7 @@
  */
 
 #include <linux/export.h>
-#include "drm_sman.h"
+#include <drm/drm_sman.h>
 
 struct drm_owner_item {
 	struct drm_hash_item owner_hash;

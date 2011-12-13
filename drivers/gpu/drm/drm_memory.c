@@ -35,7 +35,7 @@
 
 #include <linux/highmem.h>
 #include <linux/export.h>
-#include "drmP.h"
+#include <drm/drmP.h>
 
 /**
  * Called when "/proc/dri/%dev%/mem" is read.

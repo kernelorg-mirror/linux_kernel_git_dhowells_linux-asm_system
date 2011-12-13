@@ -24,9 +24,9 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "drmP.h"
-#include "drm.h"
-#include "i915_drm.h"
+#include <drm/drmP.h>
+#include <drm/drm.h>
+#include <drm/i915_drm.h>
 #include "intel_drv.h"
 
 static bool i915_pipe_enabled(struct drm_device *dev, enum pipe pipe)

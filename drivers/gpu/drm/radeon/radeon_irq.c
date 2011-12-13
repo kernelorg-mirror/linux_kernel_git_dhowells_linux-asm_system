@@ -30,9 +30,9 @@
  *    Michel D�zer <michel@daenzer.net>
  */
 
-#include "drmP.h"
-#include "drm.h"
-#include "radeon_drm.h"
+#include <drm/drmP.h>
+#include <drm/drm.h>
+#include <drm/radeon_drm.h>
 #include "radeon_drv.h"
 
 void radeon_irq_set_state(struct drm_device *dev, u32 mask, int state)

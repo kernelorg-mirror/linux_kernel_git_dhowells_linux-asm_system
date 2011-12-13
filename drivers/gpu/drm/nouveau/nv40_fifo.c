@@ -24,9 +24,9 @@
  *
  */
 
-#include "drmP.h"
+#include <drm/drmP.h>
 #include "nouveau_drv.h"
-#include "nouveau_drm.h"
+#include <drm/nouveau_drm.h>
 #include "nouveau_ramht.h"
 
 #define NV40_RAMFC(c) (dev_priv->ramfc->pinst + ((c) * NV40_RAMFC__SIZE))

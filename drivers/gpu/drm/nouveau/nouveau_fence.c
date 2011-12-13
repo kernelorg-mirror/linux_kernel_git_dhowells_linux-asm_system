@@ -24,8 +24,8 @@
  *
  */
 
-#include "drmP.h"
-#include "drm.h"
+#include <drm/drmP.h>
+#include <drm/drm.h>
 
 #include <linux/ktime.h>
 #include <linux/hrtimer.h>

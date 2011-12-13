@@ -31,10 +31,10 @@
 
 #include <linux/module.h>
 
-#include "drmP.h"
-#include "drm.h"
-#include "drm_sarea.h"
-#include "radeon_drm.h"
+#include <drm/drmP.h>
+#include <drm/drm.h>
+#include <drm/drm_sarea.h>
+#include <drm/radeon_drm.h>
 #include "radeon_drv.h"
 #include "r300_reg.h"
 

@@ -29,9 +29,9 @@
  *    Keith Whitwell <keith@tungstengraphics.com>
  */
 
-#include "drmP.h"
-#include "drm.h"
-#include "radeon_drm.h"
+#include <drm/drmP.h>
+#include <drm/drm.h>
+#include <drm/radeon_drm.h>
 #include "radeon_drv.h"
 
 /* Very simple allocator for GART memory, working on a static range

@@ -25,7 +25,7 @@
 
 #include <linux/i2c.h>
 #include <linux/i2c-algo-bit.h>
-#include "drm_dp_helper.h"
+#include <drm/drm_dp_helper.h>
 
 struct dcb_i2c_entry;
 

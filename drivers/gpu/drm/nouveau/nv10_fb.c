@@ -1,7 +1,7 @@
-#include "drmP.h"
-#include "drm.h"
+#include <drm/drmP.h>
+#include <drm/drm.h>
 #include "nouveau_drv.h"
-#include "nouveau_drm.h"
+#include <drm/nouveau_drm.h>
 
 static struct drm_mm_node *
 nv20_fb_alloc_tag(struct drm_device *dev, uint32_t size)

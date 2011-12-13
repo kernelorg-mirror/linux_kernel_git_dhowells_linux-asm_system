@@ -30,10 +30,10 @@
  *   Ben Skeggs <darktama@iinet.net.au>
  */
 
-#include "drmP.h"
-#include "drm.h"
+#include <drm/drmP.h>
+#include <drm/drm.h>
 #include "nouveau_drv.h"
-#include "nouveau_drm.h"
+#include <drm/nouveau_drm.h>
 #include "nouveau_ramht.h"
 #include "nouveau_vm.h"
 #include "nv50_display.h"
