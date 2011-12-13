@@ -23,6 +23,8 @@
 #include <sys/ioctl.h>
 #endif /* __KERNEL__ */
 
+// DISINTEGRATE: INCLUDE UAPI HERE
+
 /* This file describes autofs v3 */
 #define AUTOFS_PROTO_VERSION	3
 
