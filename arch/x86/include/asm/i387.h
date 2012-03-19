@@ -24,6 +24,7 @@
 #include <asm/user.h>
 #include <asm/uaccess.h>
 #include <asm/xsave.h>
+#include <asm/special_insns.h>
 
 extern unsigned int sig_xstate_size;
 extern void fpu_init(void);
