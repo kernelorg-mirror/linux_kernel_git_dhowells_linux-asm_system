@@ -39,7 +39,6 @@
 #include <asm/time.h>
 #include <asm/machdep.h>
 #include <asm/cputable.h>
-#include <asm/system.h>
 
 static void smp_iSeries_cause_ipi(int cpu, unsigned long data)
 {

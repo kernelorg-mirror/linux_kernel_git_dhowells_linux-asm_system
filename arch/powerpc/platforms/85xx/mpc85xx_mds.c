@@ -34,7 +34,6 @@
 #include <linux/phy.h>
 #include <linux/memblock.h>
 
-#include <asm/system.h>
 #include <linux/atomic.h>
 #include <asm/time.h>
 #include <asm/io.h>

@@ -41,7 +41,6 @@
 #include <asm/sections.h>
 #include <asm/iommu.h>
 #include <asm/firmware.h>
-#include <asm/system.h>
 #include <asm/time.h>
 #include <asm/paca.h>
 #include <asm/cache.h>

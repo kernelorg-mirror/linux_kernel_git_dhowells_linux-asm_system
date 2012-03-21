@@ -26,7 +26,6 @@
 #include <linux/sysctl.h>
 #include <linux/tick.h>
 
-#include <asm/system.h>
 #include <asm/processor.h>
 #include <asm/cputable.h>
 #include <asm/time.h>
