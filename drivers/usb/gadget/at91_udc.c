@@ -35,7 +35,6 @@
 #include <mach/hardware.h>
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <asm/system.h>
 #include <asm/gpio.h>
 
 #include <mach/board.h>

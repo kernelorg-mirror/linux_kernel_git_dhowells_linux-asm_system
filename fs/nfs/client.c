@@ -40,7 +40,6 @@
 #include <linux/nfs_xdr.h>
 #include <linux/sunrpc/bc_xprt.h>
 
-#include <asm/system.h>
 
 #include "nfs4_fs.h"
 #include "callback.h"
