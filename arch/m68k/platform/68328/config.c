@@ -17,7 +17,6 @@
 
 #include <linux/types.h>
 #include <linux/kernel.h>
-#include <asm/system.h>
 #include <asm/machdep.h>
 #include <asm/MC68328.h>
 #if defined(CONFIG_PILOT) || defined(CONFIG_INIT_LCD)

@@ -15,7 +15,6 @@
 
 #include <linux/types.h>
 #include <linux/kernel.h>
-#include <asm/system.h>
 #include <asm/pgtable.h>
 #include <asm/machdep.h>
 #include <asm/MC68EZ328.h>
