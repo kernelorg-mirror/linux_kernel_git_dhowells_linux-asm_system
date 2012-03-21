@@ -17,7 +17,6 @@
 #include <linux/init.h>
 
 #include <asm/bootinfo.h>
-#include <asm/system.h>
 #include <asm/wbflush.h>
 
 static void wbflush_kn01(void);

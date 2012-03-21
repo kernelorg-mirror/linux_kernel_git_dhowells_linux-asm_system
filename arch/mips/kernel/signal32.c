@@ -29,7 +29,6 @@
 #include <asm/cacheflush.h>
 #include <asm/sim.h>
 #include <asm/ucontext.h>
-#include <asm/system.h>
 #include <asm/fpu.h>
 #include <asm/war.h>
 #include <asm/vdso.h>
