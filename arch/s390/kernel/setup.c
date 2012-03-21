@@ -50,7 +50,6 @@
 
 #include <asm/ipl.h>
 #include <asm/uaccess.h>
-#include <asm/system.h>
 #include <asm/smp.h>
 #include <asm/mmu_context.h>
 #include <asm/cpcmd.h>
@@ -62,6 +61,7 @@
 #include <asm/ebcdic.h>
 #include <asm/kvm_virtio.h>
 #include <asm/diag.h>
+#include <asm/facility.h>
 
 long psw_kernel_bits	= PSW_DEFAULT_KEY | PSW_MASK_BASE | PSW_ASC_PRIMARY |
 			  PSW_MASK_EA | PSW_MASK_BA;

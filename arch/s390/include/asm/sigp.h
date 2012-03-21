@@ -10,10 +10,17 @@
 #ifndef __ASM_SIGP_H
 #define __ASM_SIGP_H
 
-#include <asm/system.h>
 
 /* Get real cpu address from logical cpu number. */
 extern unsigned short __cpu_logical_map[];
+
+static inline unsigned short stap(void)
+{
+	unsigned short cpu_address;
+
+	asm volatile("stap %0" : "=m" (cpu_address));
+	return cpu_address;
+}
 
 static inline int cpu_logical_map(int cpu)
 {

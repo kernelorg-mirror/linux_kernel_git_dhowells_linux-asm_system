@@ -53,6 +53,7 @@
 #include <asm/cputime.h>
 #include <asm/vdso.h>
 #include <asm/cpu.h>
+#include <asm/facility.h>
 #include "entry.h"
 
 /* logical cpu to cpu address */

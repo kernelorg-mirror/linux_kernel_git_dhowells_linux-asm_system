@@ -9,7 +9,6 @@
 
 #ifdef CONFIG_SMP
 
-#include <asm/system.h>
 #include <asm/sigp.h>
 
 extern void machine_restart_smp(char *);
