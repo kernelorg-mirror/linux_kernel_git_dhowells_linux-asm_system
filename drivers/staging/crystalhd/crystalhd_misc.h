@@ -35,7 +35,6 @@
 #include <linux/ioctl.h>
 #include <linux/dma-mapping.h>
 #include <linux/sched.h>
-#include <asm/system.h>
 #include "bc_dts_glob_lnx.h"
 
 /* Global log level variable defined in crystal_misc.c file */
