@@ -15,7 +15,6 @@
 #include <linux/proc_fs.h>
 #include <linux/export.h>
 
-#include <asm/system.h>
 #include <asm/paca.h>
 #include <asm/firmware.h>
 #include <asm/iseries/it_lp_queue.h>

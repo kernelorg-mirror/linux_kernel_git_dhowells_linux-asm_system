@@ -40,7 +40,6 @@
 #include <linux/interrupt.h>
 #include <linux/completion.h>
 
-#include <asm/system.h>
 #include <asm/uaccess.h>
 #include <asm/prom.h>
 #include <asm/firmware.h>

@@ -68,6 +68,7 @@ typedef unsigned long irq_hw_number_t;
  */
 struct irq_host;
 struct radix_tree_root;
+struct device_node;
 
 /* Functions below are provided by the host and called whenever a new mapping
  * is created or an old mapping is disposed. The host can then proceed to
