@@ -18,7 +18,6 @@
 #include <asm/setup.h>
 #include <asm/pgtable.h>
 #include <asm/pgalloc.h>
-#include <asm/system.h>
 #include <asm/smp.h>
 #include <asm/reset.h>
 #include <asm/ipl.h>
